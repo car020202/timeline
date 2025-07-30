@@ -29,15 +29,15 @@ function useCurrentLocation() {
 import "./App.css";
 
 const images = [
-  "IMG-20250729-WA0075.jpg",
-  "IMG-20250729-WA0076.jpg",
-  "IMG-20250729-WA0077.jpg",
-  "IMG-20250729-WA0078.jpg",
-  "IMG-20250729-WA0079.jpg",
-  "IMG-20250729-WA0080.jpg",
-  "IMG-20250729-WA0081.jpg",
-  "IMG-20250729-WA0082.jpg",
-  "IMG-20250729-WA0083.jpg",
+  "/IMG-20250729-WA0075.jpg",
+  "/IMG-20250729-WA0076.jpg",
+  "/IMG-20250729-WA0077.jpg",
+  "/IMG-20250729-WA0078.jpg",
+  "/IMG-20250729-WA0079.jpg",
+  "/IMG-20250729-WA0080.jpg",
+  "/IMG-20250729-WA0081.jpg",
+  "/IMG-20250729-WA0082.jpg",
+  "/IMG-20250729-WA0083.jpg",
 ];
 
 const messages = [
@@ -442,11 +442,7 @@ const App = () => {
     <div className="container">
       <h1 className="title animate">{messages[index]}</h1>
       <div className="image-wrapper animate">
-        <img
-          src={`/src/assets/${images[index]}`}
-          alt="Foto especial"
-          className="photo"
-        />
+        <img src={images[index]} alt="Foto especial" className="photo" />
       </div>
       <div className="controls">
         <button onClick={prev} className="btn">
