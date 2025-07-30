@@ -1,0 +1,235 @@
+/* Modal y línea de tiempo */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.modal {
+  background: #fff;
+  border-radius: 1.5rem;
+  padding: 2rem 2.5rem;
+  box-shadow: 0 8px 32px #d7266022;
+  min-width: 320px;
+  max-width: 95vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.modal h2 {
+  color: #d72660;
+  margin-bottom: 1rem;
+}
+.modal input[type="text"],
+.modal input[type="date"],
+.modal input[type="time"] {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.6rem 1rem;
+  border-radius: 1rem;
+  border: 1px solid #d7266044;
+  font-size: 1rem;
+}
+.modal input[type="file"] {
+  margin-bottom: 1rem;
+}
+.timeline-list {
+  margin: 2.5rem auto 0 auto;
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.timeline-item {
+  display: flex;
+  align-items: flex-start;
+  background: #fff8;
+  border-radius: 1.2rem;
+  box-shadow: 0 2px 12px #d7266022;
+  padding: 1rem;
+  gap: 1.2rem;
+}
+
+.timeline-item-large {
+  min-width: 350px;
+  max-width: 600px;
+  margin: 1.5rem auto;
+  padding: 2rem 2rem;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 24px #d7266044;
+}
+
+.timeline-photo-large {
+  width: 160px;
+  height: 160px;
+  border-radius: 1.2rem;
+  box-shadow: 0 4px 16px #d7266044;
+}
+.timeline-photo {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px #d7266044;
+}
+.timeline-info {
+  flex: 1;
+  text-align: left;
+}
+.timeline-info h3 {
+  margin: 0 0 0.3rem 0;
+  color: #d72660;
+  font-size: 1.1rem;
+}
+.timeline-info p {
+  margin: 0.1rem 0;
+  color: #333;
+  font-size: 0.98rem;
+}
+/* Estilos personalizados para la galería del día de la novia */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ffe0ec 0%, #c2e9fb 100%);
+}
+
+.title {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  color: #d72660;
+  text-shadow: 1px 1px 8px #fff6, 0 2px 8px #d7266022;
+  animation: fadeInDown 1s;
+}
+
+.image-wrapper {
+  box-shadow: 0 8px 32px #d7266022, 0 1.5px 8px #fff6;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  background: #fff8;
+  padding: 1rem;
+  max-width: 90vw;
+}
+
+.photo {
+  max-width: 650px;
+  max-height: 60vh;
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  object-fit: cover;
+  transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55),
+    box-shadow 0.5s;
+  box-shadow: 0 4px 24px #d7266044;
+}
+.photo:hover {
+  transform: scale(1.04) rotate(-2deg);
+  box-shadow: 0 8px 32px #d72660aa;
+}
+
+.controls {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.btn {
+  background: #d72660;
+  color: #fff;
+  border: none;
+  border-radius: 2rem;
+  padding: 0.7rem 2.2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 8px #d7266022;
+  transition: background 0.2s, transform 0.2s;
+}
+.btn:hover {
+  background: #a91d4b;
+  transform: scale(1.07);
+}
+
+.footer {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  color: #d72660;
+  text-shadow: 0 1px 8px #fff6;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+body,
+#root {
+  min-height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background: linear-gradient(135deg, #ffe0ec 0%, #c2e9fb 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#root {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
