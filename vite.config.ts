@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-      external: ["@react-google-maps/api"],
+      // No external para que Vite incluya todo en el bundle
     },
   },
 });
