@@ -27,7 +27,7 @@ const animations = [
 
 const messages = [
   {
-    title: "Para mi amor ❤️",
+    title: "Feliz dia de la Novia para mi noviecita hermosa ❤️",
     content:
       "Cada día a tu lado es un regalo que atesoro profundamente. Tu amor ilumina mis días y llena mi vida de significado. Eres mi razón para sonreír, incluso en los momentos más simples.",
   },
@@ -37,17 +37,17 @@ const messages = [
       "Gracias por ser mi apoyo incondicional, por esas palabras de aliento cuando más las necesito y por tu paciencia infinita. Eres el cimiento sobre el que construyo mis sueños y la calma en medio de mis tormentas.",
   },
   {
-    title: "El amor de mi vida",
+    title: "Eres el amor de mi vida",
     content:
       "Desde que llegaste, comprendí lo que significa amar y ser amado. Tu presencia transformó mi mundo en un lugar lleno de colores donde antes solo veía tonos grises. Eres mi mayor bendición.",
   },
   {
-    title: "Nuestros momentos",
+    title: "Nuestros momentos son los mejores",
     content:
-      "Atesoro cada risa compartida, cada mirada complicidad, cada abrazo que parece durar una eternidad. Son estos pequeños instantes los que juntos tejen la gran historia de nuestro amor.",
+      "Atesoro cada risa compartida, cada mirada que habla sin palabras, cada abrazo que parece durar una eternidad. Son estos pequeños instantes los que juntos tejen la gran historia de nuestro amor.",
   },
   {
-    title: "Te amo más allá de las palabras",
+    title: "Te amo más allá de las palabras puedan expresar",
     content:
       "Si el amor fuera un océano, el mío por ti no tendría orillas. Si fuera el cielo, no tendría estrellas suficientes para representar todo lo que siento. Eres mi todo.",
   },
@@ -62,12 +62,12 @@ const messages = [
       "No necesito buscar la felicidad en otro lugar cuando tengo tu sonrisa cada mañana. Eres ese rayo de sol que ilumina hasta el día más gris. Contigo, la vida sabe a dicha.",
   },
   {
-    title: "Juntos para siempre",
+    title: "Juntos patodalavida 💞",
     content:
       "Pase lo que pase, estaremos siempre unidos. Porque nuestro amor no es solo un sentimiento, es un pacto de almas que se eligieron para caminar juntas en esta vida y en todas las que vendrán.",
   },
   {
-    title: "Mi princesa 💖",
+    title: "Mi princesa hermosa 💖",
     content:
       "Eres la mujer que convirtió mis cuentos de hadas en realidad. Con tu ternura, tu fuerza y tu amor incondicional, has demostrado que los finales felices sí existen. Y el mío eres tú.",
   },
